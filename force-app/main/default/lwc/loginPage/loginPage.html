@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Employee Login">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-input
+                label="Employee ID"
+                onchange={handleEmployee}>
+            </lightning-input>
+
+            <lightning-input
+                type="password"
+                label="Password"
+                onchange={handlePassword}>
+            </lightning-input>
+
+            <br/>
+
+            <lightning-button
+                label="Login"
+                variant="brand"
+                onclick={handleLogin}>
+            </lightning-button>
+
+        </div>
+
+    </lightning-card>
+</template>

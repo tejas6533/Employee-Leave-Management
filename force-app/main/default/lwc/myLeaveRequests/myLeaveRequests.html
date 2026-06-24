@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="My Leave Requests">
+
+        <template if:true={leaveRequests}>
+            <lightning-datatable
+                key-field="Id"
+                data={leaveRequests}
+                columns={columns}>
+            </lightning-datatable>
+        </template>
+
+        <template if:true={error}>
+            <p class="slds-p-around_medium">
+                Error loading leave requests.
+            </p>
+        </template>
+
+    </lightning-card>
+</template>
